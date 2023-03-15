@@ -33,28 +33,28 @@ public class Main {
 
         System.out.println("Задача 4");
 
-       int agePerson = 15;
-        if (agePerson >= 2 && agePerson <=6) {
+        int agePerson = 25;
+        if (agePerson >= 2 && agePerson <= 6) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему надо ходить в садик.");
-        }else if (agePerson >= 7 && agePerson <=18){
+        } else if (agePerson >= 7 && agePerson <= 18) {
 
-            System.out.println("Если возраст человека равен "+agePerson + ", то ему надо ходить в школу.");
-        }else if (agePerson >= 19 && agePerson <=24){
-            System.out.println("Если возраст человека равен "+agePerson + ", то ему надо ходить в университет.");
-        }else if (agePerson > 24 ){
-            System.out.println("Если возраст человека равен "+agePerson + ", то ему надо ходить на работу.");
+            System.out.println("Если возраст человека равен " + agePerson + ", то ему надо ходить в школу.");
+        } else if (agePerson >= 19 && agePerson <= 24) {
+            System.out.println("Если возраст человека равен " + agePerson + ", то ему надо ходить в университет.");
+        } else {
+            System.out.println("Если возраст человека равен " + agePerson + ", то ему надо ходить на работу.");
         }
 
         System.out.println("Задача 5");
 
-        int childEag = 15;
+        int childEag = 25;
 
         if (childEag < 5) {
-            System.out.println("Если возраст ребенка равен "+childEag+",то ему нельзя кататься на атракционе.");
-        }else if (childEag >= 5 && childEag <=14) {
-            System.out.println("Если возраст ребенка равен "+childEag+",то ему можно кататься на атракционе в сопровождении с взрослым.");
-        }else if (childEag > 14) {
-            System.out.println("Если возраст ребенка равен "+childEag+",то ему можно кататься на атракционе без сопровождения взрослого.");
+            System.out.println("Если возраст ребенка равен " + childEag + ",то ему нельзя кататься на атракционе.");
+        } else if (childEag >= 5 && childEag <= 14) {
+            System.out.println("Если возраст ребенка равен " + childEag + ",то ему можно кататься на атракционе в сопровождении взрослого.");
+        } else {
+            System.out.println("Если возраст ребенка равен " + childEag + ",то ему можно кататься на атракционе без сопровождения взрослого.");
         }
 
         System.out.println("Задача 6");
@@ -63,40 +63,45 @@ public class Main {
         int seatingPlaces = 60;
         int standingPlaces = singleWagonCapacity - seatingPlaces;
 
-        if (standingPlaces >= 0 && seatingPlaces <=60){
-            System.out.println("Сидячих мест больше нет");
-        }else if (standingPlaces >60 && standingPlaces <= singleWagonCapacity){
-            System.out.println("Стоячих мест больше нет");
-        }else {
-            System.out.println("Вагон уже полностью забит");
+        int seatingPlaces1 = 67;
+        int standingPlaces2 = 40;
+
+        if (seatingPlaces1 < seatingPlaces) {
+            System.out.println("Сидячих мест осталось " + (seatingPlaces - seatingPlaces1));
+
+        } else {
+            System.out.println("Сидячих мест нет");
+
+        }
+        if (standingPlaces2 < standingPlaces) {
+
+            System.out.println("Стоячих мест сталось " + (standingPlaces - standingPlaces2));
+        } else {
+            System.out.println("Стоячих мест нет");
+        }
+        if (seatingPlaces1 >= seatingPlaces && standingPlaces2 >= standingPlaces) {
+            System.out.println("Вагон полнотсью забит");
         }
 
         System.out.println("Задача 7");
 
-        int one = 1;
-        int two = 2;
-        int three =3;
-        boolean task1 = three >= one && three >= two ;
+        int one = 11;
+        int two = 648;
+        int three = 56668;
 
-
-
-        if ( task1 ){
-            System.out.println("Три,самое большщое число ");
+        if (one > two && one > three){
+            System.out.println("Самое большое число "+one);
+        } else if (two > one && two > three){
+            System.out.println("Самое большое число "+ two);
 
         }else {
-            System.out.println("Три,не самое большое число");
+            System.out.println("Самое большое число "+three);
         }
 
 
-
-
-
     }
+
 }
-
-
-
-
 
 
 
